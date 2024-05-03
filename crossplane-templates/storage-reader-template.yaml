@@ -1,0 +1,12 @@
+apiVersion: acmeplatform.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: platform-demo
+  labels:
+    app-owner: piotrzan
+spec:
+  parameters:
+    namespace: devops-team
+    connectionVariableName: {{ connection_variable_name }}
+    image: {{ image }}
+    port: {{ port }}
