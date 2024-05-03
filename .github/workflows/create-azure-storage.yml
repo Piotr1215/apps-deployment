@@ -47,9 +47,9 @@ jobs:
 
           cp $CROSSPLANE_TEMPLATE_PATH $BUCKET_FILE_NAME
 
-          sed -i "s/{{ connection_variable_name }}/${{ inputs.connection_variable_name }}/g" $BUCKET_FILE_NAME
-          sed -i "s/{{ image }}/${{ inputs.image }}/g" $BUCKET_FILE_NAME
-          sed -i "s/{{ port }}/${{ inputs.port }}/g" $BUCKET_FILE_NAME
+          sed -i "s|{{ connection_variable_name }}|${{ inputs.connection_variable_name }}|g" $BUCKET_FILE_NAME
+          sed -i "s|{{ image }}|${{ inputs.image }}|g" $BUCKET_FILE_NAME
+          sed -i "s|{{ port }}|${{ inputs.port }}|g" $BUCKET_FILE_NAME
 
           git add $BUCKET_FILE_NAME
             
