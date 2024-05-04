@@ -36,7 +36,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create crossplane manifest for s3 bucket
+      - name: Create crossplane manifest for Azure Storage Account
         id: create-manifest
         env:
           BUCKET_FILE_PATH: "storage-reader"

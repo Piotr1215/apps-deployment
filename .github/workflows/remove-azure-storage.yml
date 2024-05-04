@@ -13,7 +13,7 @@ on:
           general context (blueprint, run id, etc...)
 
 jobs:
-  create-manifest:
+  remove-manifest:
     runs-on: ubuntu-latest
     steps:
       - name: Inform execution of request to create a new manifest
@@ -30,8 +30,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create crossplane manifest for s3 bucket
-        id: create-manifest
+      - name: Remove crossplane manifest for Azure Storage Account
+        id: remove-storage-manifest
         env:
           BUCKET_FILE_PATH: "storage-reader/${{ inputs.file_name }}"
         run: |
