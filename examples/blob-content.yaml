@@ -1,0 +1,12 @@
+apiVersion: storage.azure.upbound.io/v1beta1
+kind: Blob
+metadata:
+  name: example
+spec:
+  forProvider:
+    sourceContent: Hallo this is demo
+    storageAccountNameRef:
+      name: platformdemostorage111
+    storageContainerNameRef:
+      name: sample-blob
+    type: Block
