@@ -4,7 +4,7 @@ metadata:
   name: example
 spec:
   forProvider:
-    sourceContent: "👋 Hello, world!"
+    sourceContent: "👋 Hello, Conf24 Platform Engineering! 👋\n 😀"
     storageAccountNameRef:
       name: platformdemostorage111
     storageContainerNameRef:
